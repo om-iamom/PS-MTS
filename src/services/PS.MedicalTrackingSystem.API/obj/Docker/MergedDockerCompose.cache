@@ -1,0 +1,11 @@
+services:
+  ps.medicaltrackingsystem.api:
+    build:
+      context: C:\1_Real_Files\Other_Docs\My Files\Projects\Microservices\PS.MedicalTrackingSystem.API
+      dockerfile: PS.MedicalTrackingSystem.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: psmedicaltrackingsystemapi
+    ports:
+    - target: 80
+version: '3.4'

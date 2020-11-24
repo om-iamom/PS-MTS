@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+    medicineTrackingSystemDb:
+        image:mongo
+
+    ps.medicaltrackingsystem.api:
+        image: ${DOCKER_REGISTRY-}psmedicaltrackingsystemapi
+        build:
+            context: .
+            dockerfile: PS.MedicalTrackingSystem.API/Dockerfile
